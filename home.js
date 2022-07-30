@@ -54,9 +54,8 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]  //thats awkwar
 const canWeDeliver = zipCode => {
     if (deliveryAreaZipCodes.includes(zipCode) == true) {
         return "You're in our delivery zone!"
-    } else {
-        return "Sorry, we can't deliver to that address"
     }
+    return "Sorry, we can't deliver to that address"
 }
 
 //console.log(canWeDeliver(85200))
@@ -84,10 +83,9 @@ const canWeDeliverTwo = zipCode => {
     for (i = 0; i < deliveryAreaZipCodes.length; i++) {
         if (deliveryAreaZipCodes[i] == zipCode) {
             return "You're in our delivery zone!"
-        } else {
-            return "Sorry, we can't deliver to that address"
-        }
-    }
+}
+    return "Sorry, we can't deliver to that address"
+}
 }
 
 // console.log(canWeDeliverTwo(85200))
